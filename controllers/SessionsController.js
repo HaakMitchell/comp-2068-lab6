@@ -10,7 +10,7 @@ exports.new = (req, res) => {
   
   exports.create = (req, res, next) => {
     passport.authenticate('local', {
-      successRedirect: '/passport',
+      successRedirect: '/plans',
       successFlash: 'You were successfully logged in.',
       failureRedirect: '/login',
       failureFlash: 'Invalid credentials'
